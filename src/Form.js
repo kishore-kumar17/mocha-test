@@ -8,12 +8,25 @@ export default function Form() {
     <div>
       <form onSubmit={submitForm}>
         <div>
-          <input type='text' id='name' placeholder='Name' />
+          <input
+            className='name'
+            type='text'
+            id='name'
+            placeholder='Name'
+            value='testValue'
+          />
         </div>
         <div>
-          <input type='email' id='email' placeholder='Email' />
+          <input
+            className='email'
+            type='email'
+            id='email'
+            placeholder='Email'
+          />
         </div>
-        <button type='submit'>Submit</button>
+        <button className='button' type='submit'>
+          Submit
+        </button>
       </form>
     </div>
   );
