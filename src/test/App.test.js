@@ -28,8 +28,8 @@ describe('Testin <Form/> Component', () => {
     const input = wrapper.find('.name');
     const email = wrapper.find('.email');
     // wrapper.find('.name').at(0).simulate('onChange');
-    input.simulate('change', { target: { value: 'Changed' } });
-    input.simulate('change', { props: { value: 'Changed' } });
+    // input.simulate('change', { target: { value: 'Changed' } });
+    // input.simulate('change', { props: { value: 'Changed' } });
     expect(button.text()).to.be.eql('Submit');
     expect(input.type()).to.be.eql('input');
     expect(email.type()).to.be.eql('input');
